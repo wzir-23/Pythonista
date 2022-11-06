@@ -1,0 +1,76 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{88, 37}, {133, 43}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 2,
+          "action" : "ToggleFasting",
+          "frame" : "{{114, 191}, {80, 32}}",
+          "title" : "Start Fasting",
+          "uuid" : "FA7A10D7-A171-4CC3-A000-38127CF63E53",
+          "background_color" : "RGBA(0.722222,0.963768,1.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 0,
+          "font_bold" : false,
+          "name" : "StartStop",
+          "font_size" : 15
+        },
+        "selected" : true
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{88, 110}, {133, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "border_width" : 0,
+          "font_size" : 18,
+          "frame" : "{{79, 191}, {150, 32}}",
+          "uuid" : "0F994F48-A290-4A34-AFA4-E600ABA967B2",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "Label",
+          "corner_radius" : 0,
+          "name" : "TimeFasting",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{88, 171}, {133, 43}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "frame" : "{{114, 191}, {80, 32}}",
+          "title" : "Refresh",
+          "uuid" : "EBB96A3F-673B-460D-8BDC-11E3A35E09C0",
+          "background_color" : "RGBA(0.666667,1.000000,0.782609,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 0,
+          "name" : "RefreshButton",
+          "font_size" : 15
+        },
+        "selected" : false
+      }
+    ],
+    "frame" : "{{0, 0}, {320, 320}}",
+    "class" : "View",
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]
