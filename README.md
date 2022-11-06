@@ -5,8 +5,8 @@ This is where I keep my very small collection of Pythonista[1] scripts for iOS.
 [1] https://www.omz-software.com/pythonista/
 
 ## ToDoNow
-Prepare a list in Reminders app by preparing each reminder with the string
-'TDN: '. This program will return a random entry from that list.
+Add reminders in the Reminder app where each new reminder is prepended with 'TDN: '. 
+When called, the program will return a random entry from that list.
 
 Example:
 TDN: Practice Italian
