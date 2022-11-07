@@ -5,39 +5,53 @@
         "nodes" : [
 
         ],
-        "frame" : "{{88, 37}, {133, 43}}",
-        "class" : "Button",
+        "frame" : "{{0, -6}, {320, 320}}",
+        "class" : "View",
         "attributes" : {
-          "border_width" : 2,
-          "action" : "ToggleFasting",
-          "frame" : "{{114, 191}, {80, 32}}",
-          "title" : "Start Fasting",
-          "uuid" : "FA7A10D7-A171-4CC3-A000-38127CF63E53",
-          "background_color" : "RGBA(0.722222,0.963768,1.000000,1.000000)",
-          "class" : "Button",
-          "corner_radius" : 0,
-          "font_bold" : false,
-          "name" : "StartStop",
-          "font_size" : 15
+          "frame" : "{{110, 110}, {100, 100}}",
+          "class" : "View",
+          "name" : "view1",
+          "uuid" : "25AA3773-711B-4F87-88F6-B24817022347"
         },
-        "selected" : true
+        "selected" : false
       },
       {
         "nodes" : [
 
         ],
-        "frame" : "{{88, 110}, {133, 32}}",
+        "frame" : "{{77, 35}, {171, 45}}",
+        "class" : "Button",
+        "attributes" : {
+          "action" : "ToggleFasting",
+          "border_width" : 2,
+          "frame" : "{{120, 144}, {80, 32}}",
+          "title" : "Start",
+          "uuid" : "4DD048A3-64AE-4D49-9052-EB0A2A7676F9",
+          "class" : "Button",
+          "background_color" : "RGBA(0.695652,0.898551,1.000000,1.000000)",
+          "corner_radius" : 2,
+          "font_bold" : true,
+          "name" : "StartStop",
+          "font_size" : 14
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{71, 118}, {177, 41}}",
         "class" : "Label",
         "attributes" : {
-          "border_width" : 0,
-          "font_size" : 18,
-          "frame" : "{{79, 191}, {150, 32}}",
-          "uuid" : "0F994F48-A290-4A34-AFA4-E600ABA967B2",
+          "name" : "TimeLabel",
+          "border_width" : 1,
+          "frame" : "{{85, 144}, {150, 32}}",
+          "uuid" : "A3B022E7-C008-4B46-8345-4B0B14ABF87D",
           "class" : "Label",
-          "alignment" : "center",
-          "text" : "Label",
-          "corner_radius" : 0,
-          "name" : "TimeFasting",
+          "alignment" : "left",
+          "text" : "Time",
+          "corner_radius" : 1,
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -46,20 +60,20 @@
         "nodes" : [
 
         ],
-        "frame" : "{{88, 171}, {133, 43}}",
+        "frame" : "{{77, 187}, {171, 45}}",
         "class" : "Button",
         "attributes" : {
-          "border_width" : 1,
-          "frame" : "{{114, 191}, {80, 32}}",
+          "border_width" : 2,
+          "frame" : "{{120, 144}, {80, 32}}",
           "title" : "Refresh",
-          "uuid" : "EBB96A3F-673B-460D-8BDC-11E3A35E09C0",
-          "background_color" : "RGBA(0.666667,1.000000,0.782609,1.000000)",
+          "uuid" : "2AF13F5B-3211-444D-87E8-CA08DDA8B6FB",
+          "background_color" : "RGBA(0.782609,1.000000,0.855072,1.000000)",
           "class" : "Button",
-          "corner_radius" : 0,
+          "corner_radius" : 2,
           "name" : "RefreshButton",
-          "font_size" : 15
+          "font_size" : 14
         },
-        "selected" : false
+        "selected" : true
       }
     ],
     "frame" : "{{0, 0}, {320, 320}}",
