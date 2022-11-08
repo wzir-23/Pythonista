@@ -30,9 +30,9 @@ simple enough without login or subscriptions.
 -  Start period
 -  Stop period
 -  Store values in sqlite3 database
+-  Create basic GUI   <-- Ugly beast!
 
 ### Todo:
-- Create basic GUI
 - Delete period
 - Edit past values
 - Show duration of current or last period
