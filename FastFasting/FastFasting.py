@@ -14,14 +14,20 @@ def ToggleFasting(sender):
     global cursor
     started = get_status(cursor)
     if started:
-        sender.title = 'Start fasting'
+       sender.title = 'Start fasting'
     else:
-        sender.title = 'Stop fasting'
+       sender.title = 'Stop fasting'
     add_time_to_db(db_connection, cursor, started)
 
 
 def RefreshPressed(sender):
     ''' The refresh button was pressed '''
+    global cursor
+    started = get_status(cursor)
+    if started:
+       StartStop.title = 'Start fasting'
+    else:
+       StartStop.title = 'Stop fasting'
     pass
 
 
@@ -35,20 +41,23 @@ def connect_db(fname):
     db_connection = sqlite3.connect(fname)  #, check_same_thread=False)
     cursor = db_connection.cursor()
     if create_tables:
-        cursor.execute('''CREATE TABLE fasting(start_time text,
-                          stop_time text)''')
+        cursor.execute('''CREATE TABLE fasting
+                        (Id integer primary key autoincrement,
+                        start_time text,
+                        stop_time text)''')
 
 
 def list_database(cursor):
     ''' list all database intries '''
-    sql = 'SELECT rowid, start_time, stoptime FROM fasting'
+    sql = 'SELECT * FROM fasting WHERE Id = (SELECT MAX(Id) FROM fasting)'
     cursor.execute(sql)
     return cursor.fetchall()
 
 
 def last_db_entry(cursor):
     ''' return rowid + data from last db insert '''
-    sql = 'SELECT rowid,* FROM fasting ORDER BY start_time DESC LIMIT 1'
+    # sql = 'SELECT rowid,* FROM fasting ORDER BY start_time DESC LIMIT 1'
+    sql = 'SELECT * FROM fasting WHERE Id = (SELECT MAX(Id) FROM fasting)'
     cursor.execute(sql)
     return cursor.fetchall()
 
@@ -58,7 +67,7 @@ def get_status(cursor):
     last_entry = last_db_entry(cursor)
     if not last_entry:   # db empty
         return False
-    rowid, start_time, stop_time = last_entry[0]
+    id, start_time, stop_time = last_entry[0]
     if start_time and stop_time:  # last was started and stopped
         return False
     return True
@@ -86,6 +95,7 @@ def main():
     # The load must appear after defining the ui actions
     v = ui.load_view('FastFasting')
     v.present('sheet')
+
 
 
 if __name__ == "__main__":
