@@ -10,24 +10,27 @@ cursor = ''
 @ui.in_background
 def ToggleFasting(sender):
     ''' The start/stop button was pressed '''
+    print("Sender: %s", sender)
     global db_connection
     global cursor
     started = get_status(cursor)
     if started:
-       sender.title = 'Start fasting'
+       sender.title = 'Start period'
     else:
-       sender.title = 'Stop fasting'
+       sender.title = 'Stop period'
     add_time_to_db(db_connection, cursor, started)
 
 
+@ui.in_background
 def RefreshPressed(sender):
     ''' The refresh button was pressed '''
     global cursor
+    StartStop = sender.superview['StartStop']
     started = get_status(cursor)
     if started:
-       StartStop.title = 'Start fasting'
+       StartStop.title = 'Stop period'
     else:
-       StartStop.title = 'Stop fasting'
+       StartStop.title = 'Start period'
     pass
 
 

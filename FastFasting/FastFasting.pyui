@@ -19,13 +19,13 @@
         "nodes" : [
 
         ],
-        "frame" : "{{77, 35}, {171, 45}}",
+        "frame" : "{{77, 178}, {171, 45}}",
         "class" : "Button",
         "attributes" : {
           "action" : "ToggleFasting",
           "border_width" : 2,
           "frame" : "{{120, 144}, {80, 32}}",
-          "title" : "Start",
+          "title" : "Start period",
           "uuid" : "4DD048A3-64AE-4D49-9052-EB0A2A7676F9",
           "class" : "Button",
           "background_color" : "RGBA(0.695652,0.898551,1.000000,1.000000)",
@@ -40,18 +40,19 @@
         "nodes" : [
 
         ],
-        "frame" : "{{71, 118}, {177, 41}}",
+        "frame" : "{{77, 26}, {177, 41}}",
         "class" : "Label",
         "attributes" : {
           "name" : "TimeLabel",
           "border_width" : 1,
+          "flex" : "W",
           "frame" : "{{85, 144}, {150, 32}}",
           "uuid" : "A3B022E7-C008-4B46-8345-4B0B14ABF87D",
           "class" : "Label",
-          "alignment" : "left",
-          "text" : "Time",
+          "alignment" : "center",
+          "text" : "FastFasting",
           "corner_radius" : 1,
-          "font_size" : 18,
+          "font_size" : 24,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -60,10 +61,11 @@
         "nodes" : [
 
         ],
-        "frame" : "{{77, 187}, {171, 45}}",
+        "frame" : "{{77, 248}, {171, 45}}",
         "class" : "Button",
         "attributes" : {
           "border_width" : 2,
+          "action" : "RefreshPressed",
           "frame" : "{{120, 144}, {80, 32}}",
           "title" : "Refresh",
           "uuid" : "2AF13F5B-3211-444D-87E8-CA08DDA8B6FB",
