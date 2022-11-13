@@ -1,7 +1,7 @@
 import sqlite3
 
 
-db_connection = sqlite3.connect('FastFasting.db')  #, check_same_thread=False)
+db_connection = sqlite3.connect('FastFasting.db')
 cursor = db_connection.cursor()
 cursor.execute('''select * from fasting''')
 contents = cursor.fetchall()
